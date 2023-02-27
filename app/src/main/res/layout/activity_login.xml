@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/bienvenidoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/lekton005_l"
+                android:text="Bienvenido a Copernicus System!"
+                android:textSize="30dp"
+                android:transitionName="iniciaSesionTextTrans" />
+
+            <TextView
+                android:id="@+id/continuarLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lekton005_l"
+                android:text="Inicia Sesion para continuar"
+                android:textSize="20sp"
+                android:transitionName="logoImageTrans"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/usuarioTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:transitionName="emailInputTextTrans"
+                    android:hint="Usuario">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/usuarioulti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lekton005_l" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contraseñaTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:transitionName="passwordInputTextTrans"
+                    android:hint="Contraseña"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contraulti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lekton005_l"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/olvidasteContra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/lekton005_l"
+                    android:onClick="OlvidarContra"
+                    android:text="Olvidaste tu contraseña?"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/inicioSesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="70dp"
+                    android:onClick="IniciarSesion"
+                    android:text="INICIO"
+                    android:transitionName="buttonSignInTrans" />
+
+                <TextView
+                    android:id="@+id/nuevoUsuario"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/lekton005_l"
+                    android:onClick="Registrarse"
+                    android:text="Eres nuevo? Registrate!"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:transitionName="newUserTrans" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

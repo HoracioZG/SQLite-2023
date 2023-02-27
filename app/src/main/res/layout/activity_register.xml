@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".Login">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/bienvenidoLabel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:fontFamily="@font/lekton005_l"
+          android:text="Bienvenido,"
+          android:textSize="30sp"
+          android:textStyle="bold"
+          android:transitionName="textTrans" />
+
+      <TextView
+          android:id="@+id/continuarLabel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/lekton005_l"
+          android:text="Registrate para empezar a usar Copernicus System"
+          android:textSize="15sp"
+          android:transitionName="iniciaSesionTextTrans" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="5dp"
+          android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textViewRuserName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:transitionName="emailInputTextTrans">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editTextRuserName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/lekton005_l"
+              android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textViewRName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:hint="Nombre">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editTextELName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:fontFamily="@font/lekton005_l"
+              android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textViewElPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:hint="Apellido Paterno">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editTextElPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:fontFamily="@font/lekton005_l"
+              android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textViewRlastName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:hint="Apellido Materno">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editTextRlastName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:fontFamily="@font/lekton005_l"
+              android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textViewRMail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:hint="Email">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editTextRMail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:fontFamily="@font/lekton005_l"
+              android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textViewRPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:hint="Contraseña"
+            app:passwordToggleEnabled="true">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editTextRPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:fontFamily="@font/lekton005_l"
+              android:importantForAutofill="no"
+              android:inputType="textPassword"
+              android:transitionName="passwordInputTextTrans" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewRGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/lekton005_l"
+            android:text="@string/writeGender"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+          <RadioButton
+              android:id="@+id/radioButtonEL1"
+              android:layout_width="182dp"
+              android:layout_height="48dp"
+              android:fontFamily="@font/lekton005_l"
+              android:text="@string/writeGender1" />
+
+          <RadioButton
+              android:id="@+id/radioButtonEL2"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:fontFamily="@font/lekton005_l"
+              android:text="@string/writeGender2" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewRType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/lekton005_l"
+            android:text="@string/Type"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupRType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+          <RadioButton
+              android:id="@+id/radioButtonRType1"
+              android:layout_width="182dp"
+              android:layout_height="48dp"
+              android:fontFamily="@font/lekton005_l"
+              android:text="@string/writeType1" />
+
+          <RadioButton
+              android:id="@+id/radioButtonRType2"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:fontFamily="@font/lekton005_l"
+              android:text="@string/writeType2" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textViewRAge"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Age"
+            android:orientation="horizontal">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editTextRAge"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:fontFamily="@font/lekton005_l"
+              android:importantForAutofill="no"
+              android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textViewRNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:hint="Número de Celular">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editTextRNumber"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:fontFamily="@font/lekton005_l"
+              android:importantForAutofill="no"
+              android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Registrarte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/lekton005_l"
+            android:onClick="Registrarse"
+            android:text="REGISTRAR"
+            android:transitionName="buttonSignInTrans" />
+
+        <TextView
+            android:id="@+id/nuevoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Volver"
+            android:fontFamily="@font/lekton005_l"
+            android:text="Ya tienes una cuenta? Inicia Sesion!"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:transitionName="newUserTrans" />
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+
+</LinearLayout>

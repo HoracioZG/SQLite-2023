@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bienvenidoLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lekton005_l"
+                android:text="Recupera tu Contraseña"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:transitionName="textTrans" />
+
+            <TextView
+                android:id="@+id/continuarLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lekton005_l"
+                android:text="Ingresa el codigo de recuperación"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:transitionName="iniciaSesionTextTrans" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textViewRPpass"
+                    android:layout_marginTop="5sp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Codigo de Recuperación"
+                    android:transitionName="emailInputTextTrans">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextRPpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lekton005_l"
+                        android:importantForAutofill="no" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/crearpassLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lekton005_l"
+                    android:text="Crea una nueva contraseña"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:transitionName="iniciaSesionTextTrans" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textViewRPnewpass1"
+                    android:layout_marginTop="5sp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nueva Contraseña"
+                    android:transitionName="emailInputTextTrans">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextRPnewpass1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lekton005_l"
+                        android:importantForAutofill="no" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textViewRPnewpass2"
+                    android:layout_marginTop="20sp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Repetir Contraseña">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextRPnewpass2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lekton005_l" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/loginid3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="14dp"
+                    android:fontFamily="@font/lekton005_l"
+                    android:onClick="RecuperarContraseña"
+                    android:text="@string/recovery_button"
+                    android:transitionName="buttonSignInTrans" />
+
+                <TextView
+                    android:id="@+id/nuevoUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/lekton005_l"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:transitionName="newUserTrans"
+                    android:onClick="Volver"
+                    android:text="@string/back"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
