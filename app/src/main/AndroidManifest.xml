@@ -11,11 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CopernicusSystem"
         tools:targetApi="31">
+        <activity
+            android:name=".Welcome"
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCNYal8UZ0M-Mk6eC8cbJKBn6GEHHBsHfg"
-            />
+            android:value="AIzaSyC2TiIm_8DvZN6asup7oBFNVqg56gBtuwc" />
 
         <activity
             android:name=".Recoverpass"
